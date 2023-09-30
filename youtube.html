@@ -5,88 +5,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .thumbmail {
-        width: 100%
-      }
-
-      .search-bar {
-        display: block;
-      }
-
-      .video-title {
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-        margin-bottom: 12px;
-      }
-
-      .video-author,
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96,96,96);
-      }
-
-      .video-author{
-        margin-bottom: 4px;
-      }
-
-      .channel-logo {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
-
-      }
-
-      .logo {
-        width: 40px;
-        border-radius: 50px;
-
-      }
-
-      .thumbmail-row {
-        margin-bottom: 12px;
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-      }
-
-      
-    </style>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
   </head>
   <body>
     <div class="header">
-      <input class="search-bar" type="textbox" placeholder="Search">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="textbox" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg"></button>
+        <button class="voice-search-button">
+          <img class="voice-search" src="icons/voice-search-icon.svg"></button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="icons/upload.svg">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="notification-container">
+          <img class="notification-icon" src="icons/notifications.svg">
+          <div class="notification-count">3</div>
+        </div>  
+        <img class="user-photo" src="logo/channel-3.jpeg">
+      </div>
     </div>
-    
+
+    <div class="side-bar">
+      
+    </div>
+
     <div class="video-grid">
 
       <div class="video-preview">
         <div class="thumbmail-row">
           <img class="thumbmail" src="thumbmails/thumbnail-1.webp">
+          <div class="video-time">14:00</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-logo">
@@ -109,6 +66,7 @@
       <div class="video-preview">
         <div class="thumbmail-row">
           <img class="thumbmail" src="thumbmails/thumbnail-2.webp">
+          <div class="video-time">8:22</div>
         </div>
           <div class="video-info-grid">
           <div class="channel-logo">
@@ -131,6 +89,7 @@
       <div class="video-preview">
         <div class="thumbmail-row">
           <img class="thumbmail" src="thumbmails/thumbnail-3.webp">
+          <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-logo">
@@ -153,6 +112,7 @@
       <div class="video-preview">
         <div class="thumbmail-row">
           <img class="thumbmail" src="thumbmails/thumbnail-4.webp">
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-logo">
@@ -175,6 +135,7 @@
       <div class="video-preview">
         <div class="thumbmail-row">
           <img class="thumbmail" src="thumbmails/thumbnail-5.webp">
+          <div class="video-time">11:17</div>
         </div>
           <div class="video-info-grid">
           <div class="channel-logo">
@@ -197,6 +158,7 @@
       <div class="video-preview">
         <div class="thumbmail-row">
           <img class="thumbmail" src="thumbmails/thumbnail-6.webp">
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-logo">
