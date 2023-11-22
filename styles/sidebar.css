@@ -5,13 +5,25 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
 }
 
 .sidebar-link {
   height: 76px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Roboto, Arial;
+  padding: 22px;
 }
 
 .sidebar-link:hover {
-  background-color: lightslategray;
+  background-color: rgb(193, 193, 193);
   
 }
+
